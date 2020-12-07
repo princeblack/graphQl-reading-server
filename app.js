@@ -11,17 +11,13 @@ const app = express();
 app.use(cors(
   {
     origin: "https://graph-ql-reading.vercel.app",
-    allowedHeaders:'Origin, X-Requested-With, Content, Accept,Content-Type,Authorization',
-    credentials: true,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    preflightContinue: false,
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 
   }
 ))
 // connect to mongoDb database
 mongoose.connect(
-  "mongodb+srv://princeblack:Africadmc01@cluster0.cdxps.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "mongodb+srv://princeblack:QUA36cIF3dNAbVW5@cluster0.cdxps.mongodb.net/<dbname>?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useCreateIndex: true,
