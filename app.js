@@ -10,7 +10,7 @@ const app = express();
 // allow cross-origine requests
 app.use(cors(
   {
-    origin: ["*","http://localhost:3000"],
+    origin: ["https://graph-ql-reading.vercel.app","http://localhost:3000"],
     allowedHeaders:'Origin, X-Requested-With, Content, Accept,Content-Type,Authorization',
     credentials: true,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
