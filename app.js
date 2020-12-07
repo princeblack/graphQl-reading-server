@@ -10,12 +10,12 @@ const app = express();
 // allow cross-origine requests
 app.use(cors(
   {
-    origin: ["https://graph-ql-reading.vercel.app","http://localhost:3000"],
+    origin: "https://graph-ql-reading.vercel.app",
     allowedHeaders:'Origin, X-Requested-With, Content, Accept,Content-Type,Authorization',
     credentials: true,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     preflightContinue: false,
-    optionsSuccessStatus: 204 // some legacy browsers (IE11, various SmartTVs) choke on 204
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 
   }
 ))
